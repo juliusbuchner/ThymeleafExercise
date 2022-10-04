@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Registered People</title>
+</head>
+<body>
+<header>
+  <h1>List of Registered People</h1>
+  <a href="index.html">Back to Index</a>
+  <a href="contact.html">Register</a>
+</header>
+<div class="card">
+  <div class="card-header bg-warning">
+    <h4>Registered People</h4>
+  </div>
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead class="thread-dark">
+      <ol>
+        <li tr th:each="aText: ${list}" th:text="${list}"> </li>
+      </ol>
+      </thead>
+    </table>
+  </div>
+</div>
+</body>
+</html>
